@@ -16,6 +16,7 @@ func main() {
 	// Register Routes
 	router.HandleFunc("/users/create", handlers.CreateUser)
 	router.HandleFunc("/users", handlers.GetUsers)
+	router.HandleFunc("/users/get", handlers.GetUserByID) 
 	router.HandleFunc("/users/update", handlers.UpdateUser)
 	router.HandleFunc("/users/delete", handlers.DeleteUser)
 
